@@ -1,0 +1,47 @@
+### 1. Obtener todos los productos
+
+GET http://localhost:3000/api/products
+```
+
+### 2. Obtener un producto por ID
+
+GET http://localhost:3000/api/products/2
+```
+
+### 3. Buscar productos
+
+GET http://localhost:3000/api/products/search?criterio=Samsung
+```
+
+### 4. Crear un producto (POST)
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "id": "99",
+  "name": "Producto de prueba",
+  "brand": "Samsung",
+  "price": 999,
+  "currency": "MXN",
+  "rating": 4.5,
+  "cover": "https://placehold.co/300x200",
+  "stock": 10,
+  "description": "Producto creado para probar la API"
+}
+
+### 5. Actualizar un producto (PUT)
+PUT http://localhost:3000/api/products/2
+Content-Type: application/json
+
+{
+  "name": "Producto actualizado",
+  "price": 1500,
+  "stock": 8
+}
+
+
+### 6. Eliminar un producto (DELETE)
+
+DELETE http://localhost:3000/api/products/2
+
