@@ -31,7 +31,7 @@ export async function PUT(request: Request, { params }: Ctx) {
     cover: body.cover,
     price: Number(body.price),
     currency: body.currency,
-    stock: Number(body.sto43ck),
+    stock: Number(body.stock),
     rating: Number(body.rating),
   };
 
