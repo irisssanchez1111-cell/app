@@ -16,7 +16,6 @@ export default async function ProductDetailPage({
   }
 
   return (
-    
     <main className="max-w-3xl mx-auto p-6">
       <img
         src={product.cover}
@@ -28,6 +27,11 @@ export default async function ProductDetailPage({
       <p className="text-emerald-600 font-bold text-xl">
         ${product.price} {product.currency}
       </p>
+
+      {product.description && (
+        <p className="mt-4 text-gray-700 leading-relaxed">
+          {product.description}
+        </p>
+      )}
     </main>
-  );
-}
+  );}
